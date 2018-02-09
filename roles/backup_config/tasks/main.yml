@@ -1,0 +1,5 @@
+---
+# tasks file for backup_config
+- name: Backup config
+  "{{ ansible_network_os }}"_config:
+    backup: yes
