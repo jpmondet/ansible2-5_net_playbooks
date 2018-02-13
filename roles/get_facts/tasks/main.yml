@@ -13,7 +13,6 @@
   when: ansible_network_os == 'vyos'
 
 ###
-# Demonstrate variables
 #
 - name: Display some facts
   debug:

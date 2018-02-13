@@ -1,5 +1,6 @@
 ---
 # tasks file for backup_config
 - name: Backup config
-  "{{ ansible_network_os }}"_config:
+  nxos_config:
     backup: yes
+  when: ansible_network_os == "nxos"

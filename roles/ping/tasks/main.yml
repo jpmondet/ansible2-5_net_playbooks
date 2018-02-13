@@ -1,0 +1,9 @@
+---
+# tasks file for ping
+- name: Test reachability
+  net_ping:
+    dest: "{{ item }}"
+    source: "{{ ip_source }}"
+    vrf: "{{ vrf }}"
+    count: "{{ ping_count }}"
+  with_items: "{{ ip_dest }}"

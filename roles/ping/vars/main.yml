@@ -1,0 +1,8 @@
+---
+# vars file for ping    
+ip_source : 172.17.0.2
+vrf: VRF1
+ping_count: 5
+ip_dest:
+  - "172.17.0.3"
+  - "172.17.0.4"
